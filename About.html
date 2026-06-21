@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-black: #000814;
+            --color-spaceblue: #023047;
+            --color-bluegreen: #219ebc;
+            --color-white: #ffffff;
+            --color-gray: #e5e5e5;
+            --color-teal: #5bc0be;
+            --color-navy: #001d3d;
+            --color-darkgray: #fffcf2;
+
+
+            --font-poppins: "Poppins", sans-serif;
+            --font-playfair: "Playfair Display", serif;
+            --font-sans: "Sansita Swashed", system-ui;
+
+
+            --background-image-hero: url(/image/hubble-2.jpg);
+            --background-image-mission: url(/image/hubble-3.jpg);
+            --background-image-About: url(/image/stsci-2.jpg);
+            --background-image-team: url(/image/stsci-1.png);
+            --background-image-: url(/image/hubble-1.jpg);
+        }
+
+
+        .bg-hero{
+            background-image: url(image/hubble-2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-playfair antialiased scroll-smooth w-full ">
+    <div>
+          <header class="fixed bg-spaceblue max-w-full w-full font-playfair p-4 z-50">
+            <div class="flex justify-between items-center mt-0 text-white ">
+                <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                <nav class="hidden md:flex justify-center gap-8 uppercase font-normal text-base">
+                <a href="index.html" class=" hover:text-bluegreen ">Home</a>
+                <a href="About.html" class="text-bluegreen ">About</a>
+                <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                <a href="Explore.html" class=" hover:text-bluegreen ">explore</a>
+                </nav>
+                <a href="Explore.html" class="capitalize border border-teal px-3 py-1 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300">learn more</a>
+            </div>
+        </header>
+
+        <section id="Hero" class="relative h-screen">
+            <div class="bg-About bg-fixed bg-cover bg-center min-h-screen w-full flex flex-col justify-start items-start ">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10 ">
+                    
+                    <h1 class=" mt-35 md:ml-8 text-4xl/10 p-5 font-bold md:text-5xl/10 w-lg">
+                        <span class="text-teal font-sans text-xl ">About</span><br>
+                        Stellar Horizons <br> 
+                        <span class="text-teal font-sans text-3xl">  </span>
+                    </h1>
+                    <p class=" text-[1rem]/6 font-normal ml-2 md:ml-12 text-white max-w-sm  md:max-w-lg p-2 text-left">
+                        Stellar Horizons is dedicated to promoting awareness and education about space exploration. Our mission is to inspire 
+                        curiosity and encourage people to learn about the universe around us.
+                    </p>
+                    <div>
+                        <button class="capitalize border border-teal px-3 py-1 bg-bluegreen ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-transparent hover:transition duration-300 ease-in-out"><a href="#missions">Explore missions</a></button>
+                        <button class="capitalize border border-teal px-3 py-1 ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300 ease-in-out"><a href="Explore.html">learn more</a></button>
+                    </div>  
+                </div>         
+            </div>
+        </section>
+
+        <section id="missions" class="md:flex justify-around h-full">
+            <div class=" text-center">
+                <h1 class="capitalize p-5 pt-8 text-[1.5rem] md:text-[1.8rem] 
+                font-bold text-bluegreen  tracking-wide">Our Mission</h1>
+
+                <p class="text-center md:max-w-sm p-8 text-sm md:text-lg font-light tracking-wide">To educate, inspire, and connect people with the 
+                    wonders of space through engaging content, mission updates, and scientific discoveries.
+                </p>
+            </div>
+           
+         
+            <div class="text-center">
+                <h1 class="capitalize p-5 pt-8 text-[1.5rem] md:text-[1.8rem] 
+                font-bold text-bluegreen tracking-wide">Our vision</h1>
+
+                <p class="text-center md:max-w-sm p-8 text-sm md:text-lg font-light tracking-wide">We envision a future where humanity continues to explore 
+                    beyond earth, unlocking new opportunities for innovation, discovery, and collaboration.
+                </p>
+            </div>
+        </section>
+       
+        <section class="relative h-screen">
+            <div class="bg-team  bg-top bg-cover md:bg-center min-h-screen w-full">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10">
+                    <h1 class="capitalize  pt-10 md:pb-10 text-[1.5rem] md:text-4xl
+                    font-bold text-bluegreen tracking-wide text-center">Meet our team</h1>
+
+                    <div class="flex justify-center flex-col md:flex-row gap-8 p-8 text-lg/6 font-light max-h-full">
+                        <div class="bg-navy p-5 rounded-xl block hover:-translate-y-3 transition duration-300 hover:bg-teal-700">
+                            <h1 class="font-bold text-2xl tracking-wide">Astronomer</h1>
+                            <p class="p-4">Researches celestial bodies and studies the evolution of stars and galaxies.</p>
+                            
+                        </div>
+                        <div class="bg-navy p-5 rounded-xl block hover:-translate-y-3 transition duration-300 hover:bg-teal-700">
+                            <h1 class="font-bold text-2xl tracking-wide">Aerospace Engineer</h1>
+                            <p class="p-4">Develops technologies and systems that support space missions.</p>
+                            
+                        </div>
+                        <div class="bg-navy p-5 rounded-xl block hover:-translate-y-3 transition duration-300 hover:bg-teal-700 ">
+                            <h1 class="font-bold text-2xl tracking-wide">Science Communicator</h1>
+                            <p class="p-4">Transforms complex scientific informtion into engaging educational content.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class=" bg-spaceblue md:mt-0 mt-5 border-t border-gray">
+            <div  class="flex flex-col text-center md:flex-row justify-between p-8 ">
+                <div class="md:flex items-center mb-5">
+                    <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-6">
+                    <h1 class="font-black text-lg md:text-xl"> Quick Links</h1>
+                    <a href="index.html" class=" hover:text-bluegreen ">Home</a>
+                    <a href="About.html" class=" hover:text-bluegreen ">About</a>
+                    <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                    <a href="Explore.html" class=" hover:text-bluegreen ">Explore</a>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-5 tracking-wide">
+                    <h1 class="font-black mt-3 text-lg md:text-xl">Contact Us</h1>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-phone" style="color: #ffffff;"></i>  +2349060821622</a>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@stellarhorizons.com</a>
+                    <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  1 Victoria Island Boulevard, Lagos, Nigeria. </p>
+
+                </div>
+            </div>
+            
+            <p class="text-center p-5 text-lg font-light text-gray-400">Copyright &copy 2026 STELLAR Horizons. All rights reserved </p>
+
+        </footer>
+
+
+    </div>
+</body>
+</html>

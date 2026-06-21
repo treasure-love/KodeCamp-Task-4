@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-black: #000814;
+            --color-spaceblue: #023047;
+            --color-bluegreen: #219ebc;
+            --color-white: #ffffff;
+            --color-gray: #e5e5e5;
+            --color-teal: #5bc0be;
+            --color-navy: #001d3d;
+            --color-darkgray: #fffcf2;
+
+
+            --font-poppins: "Poppins", sans-serif;
+            --font-playfair: "Playfair Display", serif;
+            --font-sans: "Sansita Swashed", system-ui;
+
+
+            --background-image-hero: url(/image/hubble-2.jpg);
+            --background-image-mission: url(/image/hubble-3.jpg);
+            --background-image-About: url(/image/stsci-2.jpg);
+            --background-image-team: url(/image/stsci-1.png);
+            --background-image-: url(/image/hubble-1.jpg);
+
+        }
+
+        .bg-hero{
+            background-image: url(image/hubble-2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-playfair antialiased scroll-smooth w-full ">
+    <div>
+        <header class="fixed bg-spaceblue max-w-full w-full font-playfair p-4 z-50">
+            <div class="flex justify-between items-center mt-0 text-white ">
+                <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                <nav class="hidden md:flex justify-center gap-8 uppercase font-normal text-base">
+                <a href="index.html" class="text-bluegreen ">Home</a>
+                <a href="About.html" class=" hover:text-bluegreen ">About</a>
+                <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                <a href="Explore.html" class=" hover:text-bluegreen ">explore</a>
+                </nav>
+                <a href="About.html" class="capitalize border border-teal px-3 py-1 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300">learn more</a>
+            </div>
+        </header>
+
+        <section id="Hero" class="relative h-screen">
+            <div class="bg-hero bg-fixed bg-cover bg-center min-h-screen w-full flex flex-col justify-start items-start ">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10">
+                    
+                    <h1 class=" mt-30 md:ml-8 text-4xl/10 p-5 font-bold md:text-5xl/10 w-lg">
+                        
+                        Explore the Universe  <br> 
+                        <span class="text-teal font-sans text-3xl">Beyond Earth </span>
+                    </h1>
+                    <p class=" text-[1rem]/6 font-normal ml-2 md:ml-12 text-white max-w-sm  md:max-w-lg p-2 text-left">
+                        Embark with us on an adventure across the universe as we uncover the mysteries of distant planets, stars, 
+                        and galaxies. Discover the future of space exploration and humanity's next giant leap.
+                    </p>
+                    <div>
+                        <button class="capitalize border border-teal px-3 py-1 bg-bluegreen ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-transparent hover:transition duration-300 ease-in-out"><a href="About.html">Explore missions</a></button>
+                        <button class="capitalize border border-teal px-3 py-1 ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300 ease-in-out"><a href="Explore.html">learn more</a></button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="Features">
+            <h1 class="flex justify-center items-center capitalize p-5 pt-8 text-[1.5rem] md:text-[1.8rem] font-bold text-bluegreen tracking-tighter md:tracking-wide">Why Space exploration matters</h1>
+            <div class="flex flex-col md:flex-row p-3 gap-5 max-w-full space-x-px my-5  w-full">
+                <div class=" flex flex-row gap-5 p-5 block">              
+                    <div class="text-5xl font-bold text-teal p-3">1</div>
+                    <div class="text-lg ">
+                        <h2 class="capitalize font-bold text-2xl pb-5">scientific discovery</h2>
+                        <p class="font-light text-darkgray text-sm/6 font-serif">
+                            Space missions helps us understand the origins of the universe and uncover secrets about distant worlds.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-row gap-5 p-5 block">
+                    <div  class="text-5xl font-bold text-teal p-3">2</div>
+                    
+                    <div>
+                        <h2 class="capitalize font-bold text-2xl pb-5">technological innovation</h2>
+                        <p class="font-light text-darkgray text-sm/6 font-serif">Advancements developed for space exploration often improve life on Earth through new technologies and solutions.</p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-row gap-5 p-5 block">
+                    <div  class="text-5xl font-bold text-teal p-3 ">3</div>
+                    
+                    <div>
+                        <h2 class="capitalize font-bold text-2xl pb-5">inspiring future generations</h2>
+                        <p class="font-light text-darkgray text-sm/6 font-serif">
+                            Exploring space motivates young minds to pursue careers in science, technology, engineering, and mathematics.
+                        </p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="Mission">
+            <div class="bg-mission bg-fixed bg-cover bg-center space-x-px min-h-2xl w-full">
+                <div class="w-full h-full bg-black/50">
+
+                    <h1 class="flex justify-center p-5 pt-8 text-2xl md:text-4xl  font-bold text-bluegreen tracking-wide">Featured Missions</h1>
+                    <div class="flex flex-col md:flex-row gap-8 p-8 mb-5">
+                        <div class="border border-bluegreen  rounded-xl p-10 block hover:-translate-y-2 hover:border-cyan-300 transition duration-300">
+                            <h2 class="font-bold text-2xl capitalize text-teal pb-5">Lunar return mission</h2>
+                            <p class="text-base/6 font-serif">A missions focused on returning humans to the moon and establishing a sustainable presence for future exploration.</p>
+                        </div>
+
+                        <div class="border border-bluegreen  rounded-xl p-10 block hover:-translate-y-2 hover:border-cyan-300 transition duration-300">
+                            <h2 class="font-bold text-2xl capitalize text-teal pb-5">mars exploration initiative</h2>
+                            <p class="text-base/6 font-serif">Designed to study the Martian environment and prepare for future human missions to the Red Planet.</p>
+                        </div>
+
+                        <div class="border border-bluegreen rounded-xl p-10 block hover:-translate-y-2 hover:border-cyan-300 transition duration-300">
+                            <h2 class="font-bold text-2xl capitalize text-teal pb-5">deep space telescope</h2>
+                            <p class="text-base/6 font-serif">A powerful observatory built to capture images of distant galaxies and improve our understanding of the universe.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="testimonial">
+            <h1 class="flex justify-center p-5 pt-8 text-2xl md:text-4xl capitalize font-bold text-bluegreen pb-5 tracking-wide">testimonial</h1>
+
+            <div class="flex justify-center flex-col md:flex-row gap-8 p-8 text-lg/6 font-light max-h-full">
+                <div class="bg-navy p-5 rounded-xl hover:-translate-y-3 transition duration-300 hover:bg-teal-700">
+                    <i class="fa-solid fa-quote-left " style="color: #ffffff;"></i>
+                    <p class="p-4">Every mission brings us closer to understanding our place in the universe.</p>
+                    <i class="fa-solid fa-quote-right ml-50 md:ml-80 " style="color: #ffffff;"></i>
+                </div>
+                <div class="bg-navy p-5 rounded-xl hover:-translate-y-3 transition duration-300 hover:bg-teal-700">
+                    <i class="fa-solid fa-quote-left" style="color: #ffffff;"></i>
+                    <p class="p-4">Space exploration expands our knowledge and inspires humanity to dream beyond limits.</p>
+                    <i class="fa-solid fa-quote-right ml-50 md:ml-80" style="color: #ffffff;"></i>
+                </div>
+                <div class="bg-navy p-5 rounded-xl hover:-translate-y-3 transition duration-300 hover:bg-teal-700 ">
+                    <i class="fa-solid fa-quote-left" style="color: #ffffff;"></i>
+                    <p class="p-4">The future of humanity depends on our ability to explore and innovate.</p>
+                    <i class="fa-solid fa-quote-right ml-50 md:ml-80" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="flex justify-center items-center flex-col p-5">
+                <h1 class="font-bold pt-5 text-2xl tracking-tighter md:text-4xl text-bluegreen pb-5">Ready to Explore the Cosmos </h1>
+                <p class="text-lg/8 tracking-wider font-medium p-0 max-w-sm md:max-w-lg mb-5 text-center">Stay updated with the latest discoveries, missions, and breakthroughs in space science.</p>
+
+                <a href="About.html" class="capitalize border border-teal px-3 py-1 bg-bluegreen ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-transparent hover:transition duration-300 ease-in-out">Discover More</a>
+            </div>
+           
+        </section>
+
+        <footer class=" bg-spaceblue mt-5">
+            <div  class="flex flex-col text-center md:flex-row justify-between p-8 ">
+                <div class="md:flex items-center mb-5">
+                    <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-6">
+                    <h1 class="font-black text-lg md:text-xl"> Quick Links</h1>
+                    <a href="index.html" class=" hover:text-bluegreen ">Home</a>
+                    <a href="About.html" class=" hover:text-bluegreen ">About</a>
+                    <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                    <a href="Explore.html" class=" hover:text-bluegreen ">Explore</a>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-5 tracking-wide">
+                    <h1 class="font-black mt-3 text-lg md:text-xl">Contact Us</h1>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-phone" style="color: #ffffff;"></i>  +2349060821622</a>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@stellarhorizons.com</a>
+                    <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  1 Victoria Island Boulevard, Lagos, Nigeria. </p>
+
+                </div>
+            </div>
+            
+            <p class="text-center p-5 text-lg font-light text-gray-400">Copyright &copy 2026 STELLAR Horizons. All rights reserved </p>
+
+        </footer>
+
+
+    </div>
+</body>
+</html>

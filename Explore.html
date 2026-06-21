@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-black: #000814;
+            --color-spaceblue: #023047;
+            --color-bluegreen: #219ebc;
+            --color-white: #ffffff;
+            --color-gray: #e5e5e5;
+            --color-teal: #5bc0be;
+            --color-navy: #001d3d;
+            --color-darkgray: #fffcf2;
+
+
+            --font-poppins: "Poppins", sans-serif;
+            --font-playfair: "Playfair Display", serif;
+            --font-sans: "Sansita Swashed", system-ui;
+
+
+            --background-image-hero: url(/image/hubble-2.jpg);
+            --background-image-mission: url(/image/hubble-3.jpg);
+            --background-image-About: url(/image/stsci-2.jpg);
+            --background-image-team: url(/image/stsci-1.png);
+            --background-image-planet: url(/image/planet.jpg);
+
+            
+        }
+
+        .bg-hero{
+            background-image: url(image/hubble-2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-playfair antialiased scroll-smooth w-full ">
+    <div>
+        <header class="fixed bg-spaceblue max-w-full w-full font-playfair p-4 z-50">
+            <div class="flex justify-between items-center mt-0 text-white ">
+                <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                <nav class="hidden md:flex justify-center gap-8 uppercase font-normal text-base">
+                <a href="index.html" class=" hover:text-bluegreen ">Home</a>
+                <a href="About.html" class=" hover:text-bluegreen ">About</a>
+                <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                <a href="Explore.html" class="text-bluegreen ">explore</a>
+                </nav>
+                <a href="#planets" class="capitalize border border-teal px-3 py-1 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300">learn more</a>
+            </div>
+        </header>
+
+        <section id="Hero" class="relative h-screen">
+            <div class="bg-planet bg-fixed bg-cover bg-center min-h-screen w-full flex flex-col justify-start items-start ">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10 ">
+                    
+                    <h1 class=" mt-35 md:ml-8 text-4xl/10 p-5 font-bold md:text-5xl/10 w-lg">
+                        <span class="text-teal font-sans text-xl ">Explore</span><br>
+                        Explore our Universe <br> 
+                        <span class="text-teal font-sans text-3xl">  </span>
+                    </h1>
+                    <p class=" text-[1rem]/6 font-normal ml-2 md:ml-12 text-white max-w-sm  md:max-w-lg p-2 text-left">
+                        Learn about fascinating destinations and discoveries beyond our planet.
+                    </p>
+                    <div>
+                        <button class="capitalize border border-teal px-3 py-1 bg-bluegreen ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-transparent hover:transition duration-300 ease-in-out"><a href="About.html">Explore missions</a></button>
+                        <button class="capitalize border border-teal px-3 py-1 ml-5 md:ml-14 mt-10 text-lg font-light hover:bg-bluegreen hover:border-none transition duration-300 ease-in-out"><a href="#planets">learn more</a></button>
+                    </div>  
+                </div>         
+            </div>
+        </section>
+
+
+        <section id="planets">
+            <div class="text-center">
+                <h1 class="uppercase pt-10 text-[1.5rem] md:text-[1.8rem] mb-10
+                font-bold text-bluegreen  tracking-wide">planets</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto place-content-center p-10"> 
+                
+                <div class="border border-teal mb-8 rounded-3xl p-5 max-w-sm h-[400px] shadow-lg hover:shadow-teal/40  hover:-translate-y-3 transition duration-300">
+                    <h1 class="text-2xl font-bold text-teal uppercase mb-5">mars</h1>
+                    <img src="image/mars.png" class="w-3xs h-sm p-5 object-contain h-[220px] hover:animate-spin md:mb-3">
+                    
+                    <p class="font-light text-base">
+                        Known as the Red Planet, Mars is one of the most studied planets in our solar system and a prime candidate for future human exploration.
+                    </p>
+                </div>
+                <div class="border border-teal mb-8 rounded-3xl p-5 max-w-sm h-[400px] shadow-lg hover:shadow-teal/40  hover:-translate-y-3 transition duration-300">
+                    <h1 class="text-2xl font-bold text-teal uppercase mb-5">saturn</h1>
+                    <img src="image/saturn.png" class="w-sm h-sm p-5 object-contain h-[220px]  hover:animate-spin mb-5">
+                    
+                    <p>
+                       Recognized for its stunning ring system and unique atmosphere.
+                    </p>
+                </div>
+                <div class="border border-teal mb-8 rounded-3xl p-5 max-w-sm h-[400px] shadow-lg hover:shadow-teal/40  hover:-translate-y-3 transition duration-300">
+                    <h1 class="text-2xl font-bold uppercase text-teal mb-5">jupiter</h1>
+                    <img src="image/jupiter.png" class="w-xs h-sm object-contain h-[220px]  hover:animate-spin mb-5">
+                    
+                    <p>
+                        The largest planet in our solar system, famous for its massive storms and dozens of moons.
+                    </p>
+                </div>
+                <div class="border border-teal mb-8 rounded-3xl p-5 max-w-sm h-[400px] shadow-lg hover:shadow-teal/40 hover:-translate-y-3 transition duration-300">
+                    <h1 class="text-2xl font-bold text-teal uppercase mb-5">neptune</h1>
+                    <img src="image/neptune.png" class="w-xs h-sm  object-contain h-[220px] hover:animate-spin mb-5">
+                    
+                    <p>
+                        A distant ice giant with powerful winds and deep blue appearance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stat" class=" bg-slate-900 py-8">
+            <div class="">
+               <div class="text-center">
+                    <h1 class="uppercase text-[1.5rem] md:text-[1.8rem] mb-5
+                    font-bold text-bluegreen  tracking-wide">statistics</h1>
+                </div>
+                <div class="md:flex md:justify-between gap-4 p-5 max-w-full place-content-center p-10">
+                    <div class="bg-black p-8 border rounded-3xl text-center border-teal mb-5 md:mb-0 shadow-lg hover:shadow-teal/40 hover:-translate-y-3 transition duration-300">
+                        <p class="font-bold text-4xl pb-3 text-teal font-sans">500+</p>
+                        <p>Space Missions Conducted</p>
+                    </div>
+                    <div class="bg-black p-8 border rounded-3xl text-center border-teal mb-5 md:mb-0 shadow-lg hover:shadow-teal/40 hover:-translate-y-3 transition duration-300">
+                        <p class="font-bold text-4xl pb-3 text-teal font-sans">8</p>
+                        <p>Planets in Our Solar System</p>
+                    </div>
+                    <div class="bg-black p-8 border rounded-3xl text-center border-teal mb-5 md:mb-0 shadow-lg hover:shadow-teal/40 hover:-translate-y-3 transition duration-300">
+                        <p class="font-bold text-4xl pb-3 text-teal font-sans">100+</p>
+                        <p>Years of Space Research</p>
+                    </div>
+                    <div class="bg-black p-8 border rounded-3xl text-center border-teal mb-5 md:mb-0 shadow-lg hover:shadow-teal/40 hover:-translate-y-3 transition duration-300">
+                        <p class="font-bold text-4xl pb-3 text-teal">Millions</p>
+                        <p>Images Captured from Space</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+
+            
+        </section>
+
+
+        <footer class=" bg-spaceblue md:mt-0 border-t border-gray">
+            <div  class="flex flex-col text-center md:flex-row justify-between p-8 ">
+                <div class="md:flex items-center mb-5">
+                    <h3 class="uppercase text-teal font-black text-3xl">stellar <span class="text-gray font-light text-sm capitalize">Horizons</span></h3>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-6">
+                    <h1 class="font-black text-lg md:text-xl"> Quick Links</h1>
+                    <a href="index.html" class=" hover:text-bluegreen ">Home</a>
+                    <a href="About.html" class=" hover:text-bluegreen ">About</a>
+                    <a href="Contact.html" class=" hover:text-bluegreen ">Contact</a>
+                    <a href="Explore.html" class=" hover:text-bluegreen ">Explore</a>
+                </div>
+                <div class="flex flex-col gap-3 md:gap-5 tracking-wide">
+                    <h1 class="font-black mt-3 text-lg md:text-xl">Contact Us</h1>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-phone" style="color: #ffffff;"></i>  +2349060821622</a>
+                    <a href="#" class=" hover:text-bluegreen "><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@stellarhorizons.com</a>
+                    <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  1 Victoria Island Boulevard, Lagos, Nigeria. </p>
+
+                </div>
+            </div>
+            
+            <p class="text-center p-5 text-lg font-light text-gray-400">Copyright &copy 2026 STELLAR Horizons. All rights reserved </p>
+
+        </footer>
+
+    </div>
+</body>
+</html>
